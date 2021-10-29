@@ -1,4 +1,4 @@
-export default {
+const SEO = {
   title: 'denosaurabh | Portfolio 2021',
   description: `Denosauabh's 2021 Portfolio, A Creative Developer showcasing his skills, recent projects & blogs. Know more about Denosaurabh and want to contact him for freelance or job.`,
   openGraph: {
@@ -13,3 +13,5 @@ export default {
     cardType: 'summary_large_image',
   },
 };
+
+export default SEO;

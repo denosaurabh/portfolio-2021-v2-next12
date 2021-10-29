@@ -1,17 +1,20 @@
-import create from 'zustand';
+// import create from 'zustand';
 
-interface NavState {
-  showNavButton: boolean;
-  showNav: boolean;
-  setShowNav: (b: boolean) => void;
-  setShowNavButton: (b: boolean) => void;
-}
+// interface NavState {
+//   showNavButton: boolean;
+//   showNav: boolean;
+//   setShowNav: (b: boolean) => void;
+//   setShowNavButton: (b: boolean) => void;
+// }
 
-const useNav = create<NavState>((set) => ({
-  showNavButton: false,
-  showNav: false,
-  setShowNav: (bol) => set(() => ({ showNav: bol })),
-  setShowNavButton: (bol) => set(() => ({ showNavButton: bol })),
-}));
+// const useNav = create<NavState>((set) => ({
+//   showNavButton: false,
+//   showNav: false,
+//   setShowNav: (bol) => set(() => ({ showNav: bol })),
+//   setShowNavButton: (bol) => set(() => ({ showNavButton: bol })),
+// }));
 
-export default useNav;
+// export default useNav;
+
+const state = {};
+export default state;

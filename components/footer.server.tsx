@@ -1,4 +1,4 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import { styled } from '@styled';
 
 const Footer = () => {
@@ -6,10 +6,10 @@ const Footer = () => {
     <FooterStyled className="footer">
       <LinksContainer>
         <FooterBox>
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Reach Out</Link>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/projects">Projects</a>
+          <a href="/contact">Reach Out</a>
         </FooterBox>
         <FooterBox>
           <a
@@ -42,10 +42,10 @@ const Footer = () => {
           </a>
         </FooterBox>
         <FooterBox>
-          <Link href="/talks">Talks</Link>
-          <Link href="/tech">Technologies</Link>
-          <Link href="/snippets">Snippets</Link>
-          <Link href="/art">Art</Link>
+          <a href="/talks">Talks</a>
+          <a href="/tech">Technologies</a>
+          <a href="/snippets">Snippets</a>
+          <a href="/art">Art</a>
         </FooterBox>
       </LinksContainer>
       <BottomContainer>

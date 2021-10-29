@@ -4,7 +4,7 @@ import { styled } from '@styled';
 const About = () => {
   return (
     <AboutContainer>
-      <Heading>{new Date().getFullYear() - 2004} y'old Developer</Heading>
+      <Heading>{new Date().getFullYear() - 2004} y&apos;old Developer</Heading>
       <Image
         src="/img/me.jpg"
         alt="Denosaurabh smiling at front of camera"

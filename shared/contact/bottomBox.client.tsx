@@ -1,15 +1,15 @@
 import { styled } from '@styled';
-import useCursorAlert from '@state/coursorAlert';
+// import useCursorAlert from '@state/coursorAlert';
 
 const BottomBox = () => {
-  const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
+  // const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
 
   const onEmailClick = async () => {
     if (!window) return;
 
     await window.navigator.clipboard.writeText('denosaurabh@gmail.com');
 
-    setAlert('Email Copied!');
+    // setAlert('Email Copied!');
   };
 
   return (

@@ -1,17 +1,17 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import { styled } from '@styled';
 
-import useCursorAlert from '@state/coursorAlert';
+// import useCursorAlert from '@state/coursorAlert';
 
 const Contact = () => {
-  const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
+  // const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
 
   const onEmailClick = async () => {
     if (!window) return;
 
     await window.navigator.clipboard.writeText('denosaurabh@gmail.com');
 
-    setAlert('Email Copied!');
+    // setAlert('Email Copied!');
   };
 
   return (
@@ -21,7 +21,7 @@ const Contact = () => {
         small startups.
       </p>
       <h6>
-        <Link href="/contact">REACH OUT</Link>
+        <a href="/contact">REACH OUT</a>
       </h6>
       <span onClick={onEmailClick}>denosaurabh@gmail.com</span>
     </ContactContaier>

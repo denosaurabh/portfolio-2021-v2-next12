@@ -1,8 +1,8 @@
 import { styled } from '@styled';
 
-import LeftBox from '@shared/contact/leftBox';
-import RightBox from '@shared/contact/rightBox';
-import BottomBox from '@shared/contact/bottomBox';
+import LeftBox from '@shared/contact/leftBox.server';
+import RightBox from '@shared/contact/rightBox.server';
+import BottomBox from '@shared/contact/bottomBox.client';
 
 const Contact = () => {
   return (

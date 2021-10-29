@@ -1,4 +1,4 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import { styled } from '@styled';
 
 const Description = () => {
@@ -19,7 +19,7 @@ const Description = () => {
         When I am not programming I spend time playing video games, curating
         design & art inspirations and going for a long walk.
       </p>
-      <Link href="/about">more about me &nbsp; &rarr;</Link>
+      <a href="/about">more about me &nbsp; &rarr;</a>
     </DescriptionStyled>
   );
 };

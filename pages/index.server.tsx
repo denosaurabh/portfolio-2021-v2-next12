@@ -1,30 +1,30 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import { styled } from '@styled';
 
-import Alert from '@components/alert';
-import Description from '@components/description';
-import Projects from '@components/projects';
-import Technologies from '@components/technologies';
-import Contact from '@components/contact';
+import Alert from '@components/alert.server';
+import Description from '@components/description.server';
+// import Projects from '@components/projects.server';
+import Technologies from '@components/technologies.server';
+import Contact from '@components/contact.client';
 
-import { projectsData2021 } from '@data/projectsData';
+// import { projectsData2021 } from '@data/projectsData';
 
 export default function Home() {
   return (
     <>
       <Alert />
       <Description />
-      <Projects
+      {/* <Projects
         title="Projects 2021"
         data={projectsData2021}
         showMoreProjectsLink
-      />
+      /> */}
       <Technologies />
       <Contact />
 
-      <GradientBox>
+      {/* <GradientBox>
         <Image src="/img/Gradient.webp" alt="Gradient" layout="fill" />
-      </GradientBox>
+      </GradientBox> */}
     </>
   );
 }

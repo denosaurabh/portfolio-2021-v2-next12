@@ -1,24 +1,24 @@
 import { styled } from '@styled';
 
-import Header from '@components/header';
-import Footer from '@components/footer';
-import Nav from '@components/nav';
-import Cursor from '@components/cursor';
+import Header from '@components/header.server';
+import Footer from '@components/footer.server';
+// import Nav from '@components/nav.client';
+// import Cursor from '@components/cursor.client';
 
-import useNav from '@state/nav';
+// import useNav from '@state/nav';
 
 const Page = ({ children }) => {
-  const { showNav } = useNav(({ showNav }) => ({
-    showNav,
-  }));
+  // const { showNav } = useNav(({ showNav }) => ({
+  //   showNav,
+  // }));
 
   return (
     <Container>
-      <Cursor />
+      {/* <Cursor /> */}
       <Header />
       {children}
       <Footer />
-      {showNav && <Nav />}
+      {/* {showNav && <Nav />} */}
     </Container>
   );
 };

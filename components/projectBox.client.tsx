@@ -1,7 +1,7 @@
 import { styled } from '@styled';
 import { ProjectBox as ProjectBoxProps } from '@type/project';
 
-import useCurrentProject from '@state/currentProject';
+// import useCurrentProject from '@state/currentProject';
 
 const ProjectBox = ({
   title,
@@ -12,9 +12,9 @@ const ProjectBox = ({
   link,
   inDevelopment,
 }: ProjectBoxProps) => {
-  const { currentProject, setCurrentProject } = useCurrentProject(
-    (state) => state
-  );
+  // const { currentProject, setCurrentProject } = useCurrentProject(
+  //   (state) => state
+  // );
 
   return (
     <ProjectBoxStyled
@@ -24,9 +24,9 @@ const ProjectBox = ({
     >
       <TopBox>
         <TopLeftBox
-          onClick={() =>
-            setCurrentProject(currentProject === title ? '' : title)
-          }
+        // onClick={() =>
+        //   setCurrentProject(currentProject === title ? '' : title)
+        // }
         >
           <h5>{title}</h5>
           <span>{date}</span>
@@ -45,11 +45,15 @@ const ProjectBox = ({
           )}
         </TopRightBox>
       </TopBox>
-      <p style={{ display: currentProject === title ? 'block' : 'none' }}>
+      <p
+      // style={{ display: currentProject === title ? 'block' : 'none' }}
+      >
         {' '}
         {description}
       </p>
-      <BottomBox hide={currentProject === title}>
+      <BottomBox
+      // hide={currentProject === title}
+      >
         <div className="tech">
           {tech.map((t, i) => (
             <span key={i}>{t}</span>

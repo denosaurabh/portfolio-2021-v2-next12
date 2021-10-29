@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2019",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -15,16 +19,39 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@layouts/*": ["layouts/*"],
-      "@data/*": ["data/*"],
-      "@type/*": ["type/*"],
-      "@shared/*": ["shared/*"],
-      "@state/*": ["state/*"],
-      "@svg/*": ["svg/*"],
-      "@styled": ["./stitches.config.ts"]
-    }
+      "@components/*": [
+        "components/*"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@data/*": [
+        "data/*"
+      ],
+      "@type/*": [
+        "type/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@state/*": [
+        "state/*"
+      ],
+      "@svg/*": [
+        "svg/*"
+      ],
+      "@styled": [
+        "./stitches.config.ts"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

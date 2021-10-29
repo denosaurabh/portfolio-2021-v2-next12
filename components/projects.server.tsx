@@ -1,6 +1,6 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import { styled } from '@styled';
-import ProjectBox from '@components/projectBox';
+import ProjectBox from '@components/projectBox.client';
 import { ProjectBox as ProjectBoxProps } from '@type/project';
 
 interface ProjectsProps {
@@ -25,7 +25,7 @@ const Projects = ({
       ))}
 
       {showMoreProjectsLink && (
-        <Link href="/projects">Check out more projects &rarr;</Link>
+        <a href="/projects">Check out more projects &rarr;</a>
       )}
     </ProjectsContainer>
   );

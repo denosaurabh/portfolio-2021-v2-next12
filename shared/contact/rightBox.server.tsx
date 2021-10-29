@@ -1,15 +1,15 @@
 import { styled } from '@styled';
-import useCursorAlert from '@state/coursorAlert';
+// import useCursorAlert from '@state/coursorAlert';
 
 const RightBox: React.FC = () => {
-  const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
+  // const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
 
   const onDiscordClick = async () => {
     if (!window) return;
 
     await window.navigator.clipboard.writeText('denosaurabh#8275');
 
-    setAlert('Discord ID Copied!');
+    // setAlert('Discord ID Copied!');
   };
 
   return (
