@@ -8,28 +8,28 @@ const Nav = () => {
 
   return (
     <NavContainer>
-      <a href="/" passHref>
+      <a href="/">
         <a
         //  onClick={() => setShowNav(false)}
         >
           Home
         </a>
       </a >
-      <a  href="/about" passHref>
+      <a  href="/about">
         <a
         //  onClick={() => setShowNav(false)}
         >
           About
         </a>
       </a >
-      <a  href="/projects" passHref>
+      <a  href="/projects">
         <a
         //  onClick={() => setShowNav(false)}
         >
           Projects
         </a>
       </a >
-      <a  href="/contact" passHref>
+      <a  href="/contact">
         <a
         //  onClick={() => setShowNav(false)}
         >
