@@ -51,7 +51,7 @@ const Footer = () => {
       <BottomContainer>
         <span>&copy; denosaurabh 2021</span>
         <span
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          // onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           style={{ cursor: 'pointer' }}
         >
           BACK TO TOP &uarr;

@@ -14,7 +14,9 @@ const BottomBox = () => {
 
   return (
     <BottomBoxStyled className="bottom-box">
-      <h4 onClick={onEmailClick}>denosaurabh@gmail.com</h4>
+      <h4 
+      // onClick={onEmailClick}
+      >denosaurabh@gmail.com</h4>
     </BottomBoxStyled>
   );
 };

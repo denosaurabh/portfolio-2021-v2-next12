@@ -1,7 +1,7 @@
 // import { NextSeo } from 'next-seo';
 
 import { globalStyles } from '@styled';
-import Page from '@layouts/page.client';
+import Page from '@layouts/page.server';
 // import SEO from '../next-seo.config';
 
 function MyApp({ Component, pageProps }) {
@@ -9,11 +9,7 @@ function MyApp({ Component, pageProps }) {
 
   //   <Page>
   // <NextSeo {...SEO} />
-  return (
-    <Page>
-      <Component {...pageProps} />
-    </Page>
-  );
+  return <Component {...pageProps} />;
 
   //  </Page>
 }

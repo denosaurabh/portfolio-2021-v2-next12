@@ -1,6 +1,8 @@
 // import Image from 'next/image';
 import { styled } from '@styled';
 
+import Page from '@layouts/page.server';
+
 import Alert from '@components/alert.server';
 import Description from '@components/description.server';
 // import Projects from '@components/projects.server';
@@ -11,7 +13,7 @@ import Contact from '@components/contact.client';
 
 export default function Home() {
   return (
-    <>
+    <Page>
       <Alert />
       <Description />
       {/* <Projects
@@ -25,7 +27,7 @@ export default function Home() {
       {/* <GradientBox>
         <Image src="/img/Gradient.webp" alt="Gradient" layout="fill" />
       </GradientBox> */}
-    </>
+    </Page>
   );
 }
 

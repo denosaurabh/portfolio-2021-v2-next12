@@ -23,7 +23,9 @@ const Contact = () => {
       <h6>
         <a href="/contact">REACH OUT</a>
       </h6>
-      <span onClick={onEmailClick}>denosaurabh@gmail.com</span>
+      <span 
+      // onClick={onEmailClick}
+      >denosaurabh@gmail.com</span>
     </ContactContaier>
   );
 };

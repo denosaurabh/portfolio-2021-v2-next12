@@ -18,7 +18,9 @@ const RightBox: React.FC = () => {
         <span>Timezone</span>
         <p>GMT +5:30 </p>
       </InfoBox>
-      <InfoBox onClick={onDiscordClick}>
+      <InfoBox
+      //  onClick={onDiscordClick}
+       >
         <span>Discord</span>
         <p style={{ cursor: 'pointer' }}>denosaurabh#8275</p>
       </InfoBox>
